@@ -35,6 +35,6 @@ tabela = pd.read_excel("Vendas.xlsx")
 @app.route("/")
 def faturamento():
     calculo_faturamentoTotal = float(tabela["Valor Final"].sum())
-    return {"Faturamento":calculo_faturamentoTotal}
+    return {"Faturamento": calculo_faturamentoTotal}
 
 app.run(debug=True)

@@ -31,7 +31,7 @@ app = Flask(__name__)
 
 import pandas as pd
 
-with pd.ExcelFile("Vendas2.xlsx") as xls:
+with pd.ExcelFile("Vendas.xlsx") as xls:
     df1 = pd.read_excel(xls, sheet_name = 'Vendas')
     df2 = pd.read_excel(xls, sheet_name = 'Cadastro')
 print(df1.head())
